@@ -15764,6 +15764,10 @@ button.bg-darker:focus {
   color: #fff !important;
 }
 
+.text-midnight {
+  color: #111741 !important;
+}
+
 .text-primary {
   color: #5e72e4 !important;
 }
