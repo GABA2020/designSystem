@@ -1,4 +1,4 @@
-<h1 id="argon-design-system">GABA Design System</a></h1>
+<h1 id="argon-design-system"><img src="favicon.ico" width="30" height="30"> GABA Design System</a></h1>
 
 <!-- <p><img src="https://s3.amazonaws.com/creativetim_bucket/products/90/original/opt_argon_thumbnail.jpg" alt="Product Gif" /></p> -->
 
