@@ -21,16 +21,24 @@ Coded by www.creative-tim.com
  */
 :root {
   --blue: #5e72e4;
+  --blurple: #7280da;
+  --goodnight: #111741;
   --indigo: #5603ad;
   --purple: #8965e0;
   --pink: #f3a4b5;
   --red: #f5365c;
   --orange: #fb6340;
   --yellow: #ffd600;
+  --mango: #eeaa35;
   --green: #2dce89;
+  --ariel: #59b88d;
+  --emerald: #337859;
   --teal: #11cdef;
   --cyan: #2bffc6;
   --white: #fff;
+  --chalk: #f9f9f9;
+  --dust: #c9cdd1;
+  --concrete: #848d96;
   --gray: #8898aa;
   --gray-dark: #32325d;
   --light: #ced4da;
@@ -84,13 +92,13 @@ section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
-  color: #525f7f;
+  color: #111741;
   text-align: left;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 [tabindex="-1"]:focus {
@@ -109,6 +117,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: url("/assets/fonts/Eksell-Medium.otf");
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -406,10 +415,10 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 400;
+  font-family: "Gotham", serif;
+  font-weight: 800;
   line-height: 1.5;
-  color: #32325d;
+  color: #111741;
 }
 
 h1,
@@ -444,7 +453,7 @@ h6,
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .display-1 {
@@ -2613,11 +2622,11 @@ textarea.form-control.is-invalid {
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.625rem 1.25rem;
-  font-size: 0.875rem;
+  border: 2px solid transparent;
+  padding: 12px 25px;
+  font-size: 16px;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 6px;
   transition: all 0.15s ease;
 }
 
@@ -2660,16 +2669,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  color: #111741;
+  background-color: #eeaa35;
+  border-color: #eeaa35;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #3d55df;
-  border-color: #324cdd;
+  background-color: #111741;
+  border-color: #111741;
 }
 
 .btn-primary:focus,
@@ -2679,9 +2688,9 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-  color: #fff;
-  background-color: #5e72e4;
-  border-color: #5e72e4;
+  color: #111741;
+  background-color: #848d96;
+  border-color: #848d96;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
@@ -6748,7 +6757,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6776,6 +6785,7 @@ a.close.disabled {
   display: block;
   width: 0.8rem;
   height: 0.4rem;
+  margin: 6px; /* this gets rid of the arrow but leaves the tooltip centered */
 }
 
 .tooltip .arrow::before {
@@ -15764,7 +15774,7 @@ button.bg-darker:focus {
   color: #fff !important;
 }
 
-.text-midnight {
+.text-goodnight {
   color: #111741 !important;
 }
 
@@ -15788,6 +15798,14 @@ a.text-secondary:focus {
 
 .text-success {
   color: #2dce89 !important;
+}
+
+.text-ariel {
+  color: #59b88d !important;
+}
+
+.text-emerald {
+  color: #337859 !important;
 }
 
 a.text-success:hover,
@@ -21125,7 +21143,7 @@ p {
 
 .lead {
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   margin-top: 1.5rem;
 }
