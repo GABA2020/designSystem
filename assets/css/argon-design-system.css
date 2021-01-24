@@ -117,9 +117,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: url("/assets/fonts/Eksell-Medium.otf");
   margin-top: 0;
   margin-bottom: 0.5rem;
+  @font-face {
+    font-family: "Eksell";
+    src: url("/assets/fonts/Eksell-Medium.otf") format("otf");
+  }
 }
 
 p {
@@ -415,8 +418,8 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Gotham", serif;
-  font-weight: 800;
+  font-family: Bebas Neue, serif;
+  font-weight: 700;
   line-height: 1.5;
   color: #111741;
 }
