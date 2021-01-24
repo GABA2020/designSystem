@@ -98,7 +98,7 @@ body {
   line-height: 1.5;
   color: #111741;
   text-align: left;
-  background-color: #f9f9f9;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -109,6 +109,7 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
+  background-color: #111741;
 }
 
 h1,
@@ -2089,16 +2090,16 @@ pre code {
 .form-control {
   display: block;
   width: 100%;
-  height: calc(1.5em + 1.25rem + 2px);
-  padding: 0.625rem 0.75rem;
-  font-size: 0.875rem;
-  font-weight: 400;
+  height: calc(1.5em + 1.25rem + 10px);
+  padding: 0.75rem 0.625rem 0.75rem 1.5rem;
+  font-size: 40px;
+  font-weight: 500;
   line-height: 1.5;
-  color: #8898aa;
-  background-color: #fff;
+  color: #111741;
+  background-color: #f9f9f9;
   background-clip: padding-box;
-  border: 1px solid #cad1d7;
-  border-radius: 0.25rem;
+  border: 2px solid #c9cdd1;
+  border-radius: 0.375rem;
   box-shadow: none;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -2115,9 +2116,9 @@ pre code {
 }
 
 .form-control:focus {
-  color: #8898aa;
-  background-color: #fff;
-  border-color: rgba(50, 151, 211, 0.25);
+  color: #111741;
+  background-color: #f9f9f9;
+  border-color: #111741;
   outline: 0;
   box-shadow: none, none;
 }
@@ -2618,6 +2619,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
+  font-family: "Gotham", serif;
   display: inline-block;
   font-weight: 600;
   color: #525f7f;
@@ -2625,11 +2627,11 @@ textarea.form-control.is-invalid {
   vertical-align: middle;
   user-select: none;
   background-color: transparent;
-  border: 2px solid transparent;
-  padding: 12px 25px;
-  font-size: 16px;
+  border: 0.125rem solid transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
   line-height: 1.5;
-  border-radius: 6px;
+  border-radius: 0.375rem;
   transition: all 0.15s ease;
 }
 
@@ -2700,8 +2702,8 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #324cdd;
-  border-color: #2742db;
+  background-color: #010204;
+  border-color: #010204;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -2711,16 +2713,16 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #212529;
-  background-color: #f4f5f7;
-  border-color: #f4f5f7;
+  color: #111741;
+  background-color: #7280db54;
+  border-color: #7280db00;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-secondary:hover {
-  color: #212529;
-  background-color: #dee1e7;
-  border-color: #d6dae2;
+  color: #fff;
+  background-color: #7280db;
+  border-color: #7280db;
 }
 
 .btn-secondary:focus,
@@ -2730,7 +2732,7 @@ fieldset:disabled a.btn {
 
 .btn-secondary.disabled,
 .btn-secondary:disabled {
-  color: #212529;
+  color: #111741;
   background-color: #f4f5f7;
   border-color: #f4f5f7;
 }
@@ -2738,9 +2740,9 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show>.btn-secondary.dropdown-toggle {
-  color: #212529;
-  background-color: #d6dae2;
-  border-color: #cfd3dc;
+  color: #fff;
+  background-color: #495bd1;
+  border-color: #495bd1;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
@@ -2985,15 +2987,15 @@ fieldset:disabled a.btn {
 
 .btn-default {
   color: #fff;
-  background-color: #172b4d;
-  border-color: #172b4d;
+  background-color: #111741;
+  border-color: #111741;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-default:hover {
   color: #fff;
-  background-color: #0e1b30;
-  border-color: #0b1526;
+  background-color: #010204;
+  border-color: #010204;
 }
 
 .btn-default:focus,
@@ -15811,6 +15813,14 @@ a.text-secondary:focus {
   color: #337859 !important;
 }
 
+.text-blurple {
+  color: #7280da !important;
+}
+
+.text-mango {
+  color: #eeaa35 !important;
+}
+
 a.text-success:hover,
 a.text-success:focus {
   color: #1f8f5f !important;
@@ -17832,10 +17842,10 @@ a.text-lighter:focus {
 
 .btn {
   position: relative;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   will-change: transform;
   letter-spacing: 0.025em;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -21148,7 +21158,7 @@ p {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.7;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .lead+.btn-wrapper {
